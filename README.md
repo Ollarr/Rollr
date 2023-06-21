@@ -1,6 +1,6 @@
-# dice_game
+# roller
 
-A new Flutter project.
+A simple dice game, built with flutter.
 
 ## Getting Started
 
