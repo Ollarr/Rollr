@@ -17,7 +17,25 @@ class GradientContainer extends StatelessWidget {
             begin: gradientStartAlignment,
             end: gradientEndAlignment),
       ),
-      child: Center(child: Image.asset("assets/images/dice-images/dice-6.png")),
+      child: Center(
+          child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Image.asset(
+            "assets/images/dice-images/dice-6.png",
+            width: 250,
+          ),
+          ElevatedButton(
+            onPressed: () {
+              // ...
+            },
+            style: ElevatedButton.styleFrom(
+                padding: const EdgeInsets.all(12),
+                textStyle: const TextStyle(fontSize: 24)),
+            child: const Text("Roll the Rollr"),
+          )
+        ],
+      )),
     );
   }
 }
